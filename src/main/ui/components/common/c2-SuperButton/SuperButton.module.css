@@ -3,8 +3,10 @@
 }
 
 .button {
-    height: 20px;
+    height: 40px;
     width: 100px;
+    margin: 10px;
+    color: darkgrey;
 }
 
 .red {
