@@ -1,0 +1,12 @@
+.default {
+
+}
+
+.button {
+    height: 20px;
+    width: 100px;
+}
+
+.red {
+    background: red;
+}
