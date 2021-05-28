@@ -6,7 +6,7 @@ import {Profile} from "./ui/pages/Profile";
 import {Registration} from "./ui/pages/Registration";
 import {PasswordRecovery} from "./ui/pages/PasswordRecovery";
 import {EnterNewPassword} from "./ui/pages/EnterNewPassword";
-import {Error404} from "./ui/pages/Error404";
+import {Error404} from "./ui/pages/error404/Error404";
 import {NavBar} from "./ui/components/NavBar";
 import {TestPage} from "./ui/pages/TestPage";
 
@@ -23,8 +23,8 @@ const App = () => {
                         <Route path='/profile' render={() => <Profile/>}/>
                         <Route path='/recovery' render={() => <PasswordRecovery/>}/>
                         <Route path='/newPassword' render={() => <EnterNewPassword/>}/>
-                        {/*<Route path='/404' render={() => <Error404/>}/>*/}
-                        <Route render={() => <Error404/>}/>
+                        <Route path='/404' render={() => <Error404/>}/>
+                        <Redirect from={'*'} to={'/404'}/>
                     </Switch>
                     <TestPage/>
                 </div>
