@@ -14,4 +14,3 @@ export type AppStoreType = ReturnType<typeof reducers>
 
 // @ts-ignore
 window.store = store
-// C:\Users\admin\WorkSpace\Study\Friday\my-app\.idea
