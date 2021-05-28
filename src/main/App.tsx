@@ -12,7 +12,6 @@ import {TestPage} from "./ui/pages/TestPage";
 
 const App = () => {
     return (
-        <HashRouter>
             <div className="App">
                 <NavBar/>
                 <div className='app-wrapper-content'>
@@ -29,7 +28,6 @@ const App = () => {
                     <TestPage/>
                 </div>
             </div>
-        </HashRouter>
     );
 }
 
